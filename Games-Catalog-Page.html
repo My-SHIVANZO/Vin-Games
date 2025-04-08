@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vin Games </title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#00F0FF',secondary:'#FF00F7'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+background-color: #0A0A0A;
+color: #ffffff;
+font-family: 'Inter', sans-serif;
+}
+.font-orbitron {
+font-family: 'Orbitron', sans-serif;
+}
+.neon-glow {
+text-shadow: 0 0 10px #00F0FF, 0 0 20px #00F0FF, 0 0 30px #00F0FF;
+}
+.purple-glow {
+text-shadow: 0 0 10px #FF00F7, 0 0 20px #FF00F7, 0 0 30px #FF00F7;
+}
+.neon-border {
+box-shadow: 0 0 5px #00F0FF, 0 0 10px #00F0FF;
+}
+.purple-border {
+box-shadow: 0 0 5px #FF00F7, 0 0 10px #FF00F7;
+}
+.gradient-text {
+background: linear-gradient(90deg, #00F0FF, #FF00F7);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+.grid-pattern {
+background-image: radial-gradient(#ffffff11 1px, transparent 1px);
+background-size: 20px 20px;
+}
+.game-card {
+transition: transform 0.2s, box-shadow 0.2s;
+}
+.game-card:hover {
+transform: translateY(-2px);
+box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+.category-pill {
+transition: all 0.2s;
+}
+.category-pill:hover, .category-pill.active {
+background-color: #00F0FF;
+color: #0A0A0A;
+}
+</style>
+</head>
+<body class="grid-pattern">
+<!-- Navigation Bar -->
+   <nav class="fixed top-0 w-full bg-black bg-opacity-70 backdrop-blur-md z-50 border-b border-gray-800">
+    <div class="flex justify-between items-center px-4 py-3">
+        <!-- Left: Logo image -->
+        <div class="flex items-center">
+            <img src="vin-logo.png" alt="Vin Games Logo" class="h-10 w-auto">
+        </div>
+
+        <!-- Right: Company name -->
+        <div>
+            <span class="font-orbitron text-white font-semibold text-lg">Vin Games</span>
+        </div>
+    </div>
+</nav>
+
+
+
+<pre> 
+    
+    </pre>
+
+<!-- Featured Games -->
+<section class="px-4 mb-6">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">Featured Games</h2>
+</div>
+<div class="overflow-x-auto -mx-4 px-4">
+<div class="flex space-x-3 w-max pb-2">
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 w-64 overflow-hidden cursor-pointer">
+  <!-- Square image container -->
+  <div class="relative w-full pt-[100%]">
+    <img src="valorant.jpg" alt="Valorant" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    
+    <!-- Game type badge -->
+    <div class="absolute top-2 left-2 bg-primary text-black text-xs font-bold px-2 py-1 rounded">FPS</div>
+    
+    <!-- Players online -->
+    <div class="absolute top-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded-full flex items-center">
+      <i class="ri-user-line mr-1"></i>
+      <span>247 playing</span>
+    </div>
+  </div>
+
+  <!-- Content below image -->
+  <div class="p-3">
+    <h3 class="font-orbitron font-bold text-white">Valorant</h3>
+    <p class="text-gray-400 text-xs mt-1">5v5 tactical shooter with unique character abilities</p>
+    <div class="mt-2 flex justify-between items-center">
+      <div class="flex">
+        <span class="text-xs bg-green-900 text-green-400 px-2 py-0.5 rounded-full flex items-center">
+          <i class="ri-checkbox-circle-line mr-1"></i>
+          Available
+        </span>
+      </div>
+      <div class="flex space-x-1">
+        <span class="text-xs bg-gray-800 text-primary px-2 py-0.5 rounded-full">Pro</span>
+        <span class="text-xs bg-gray-800 text-white px-2 py-0.5 rounded-full">Std</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 w-64 overflow-hidden cursor-pointer">
+  <!-- Square image container -->
+  <div class="relative w-full pt-[100%]">
+    <img src="fifa25.jpg" alt="FIFA" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    
+    <!-- Game type badge -->
+    <div class="absolute top-2 left-2 bg-secondary text-black text-xs font-bold px-2 py-1 rounded">Sports</div>
+    
+    <!-- Players online -->
+    <div class="absolute top-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded-full flex items-center">
+      <i class="ri-user-line mr-1"></i>
+      <span>154 playing</span>
+    </div>
+  </div>
+
+  <!-- Content below image -->
+  <div class="p-3">
+    <h3 class="font-orbitron font-bold text-white">FIFA</h3>
+    <p class="text-gray-400 text-xs mt-1">Realistic football simulation with multiplayer modes</p>
+    <div class="mt-2 flex justify-between items-center">
+      <div class="flex">
+        <span class="text-xs bg-green-900 text-green-400 px-2 py-0.5 rounded-full flex items-center">
+          <i class="ri-checkbox-circle-line mr-1"></i>
+          Available
+        </span>
+      </div>
+      <div class="flex space-x-1">
+        <span class="text-xs bg-gray-800 text-primary px-2 py-0.5 rounded-full">Pro</span>
+        <span class="text-xs bg-gray-800 text-white px-2 py-0.5 rounded-full">Std</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+<!-- FPS Games -->
+<section class="px-4 mb-6">
+  <div class="flex justify-between items-center mb-3">
+    <h2 class="font-orbitron text-lg font-bold text-white">FPS Games</h2>
+  </div>
+
+  <div class="grid grid-cols-2 gap-3">
+    
+    <!-- Counter-Strike 2 -->
+    <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+      <div class="relative w-full pt-[100%]">
+        <img src="Counter-Strike 2.jpg" alt="Counter-Strike 2" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+        <div class="absolute top-2 right-2 flex space-x-1">
+          <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+            <i class="ri-star-fill mr-0.5"></i>
+            <span>4.9</span>
+          </span>
+        </div>
+      </div>
+      <div class="p-2">
+        <h3 class="font-orbitron font-bold text-white text-sm">Counter-Strike 2</h3>
+        <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Tactical 5v5 shooter</p>
+        <div class="mt-1.5 flex justify-between items-center">
+          <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+            <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+            <span>Available</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Valorant -->
+    <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+      <div class="relative w-full pt-[100%]">
+        <img src="valorant.jpg" alt="Valorant" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+        <div class="absolute top-2 right-2 flex space-x-1">
+          <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+            <i class="ri-star-fill mr-0.5"></i>
+            <span>4.8</span>
+          </span>
+        </div>
+      </div>
+      <div class="p-2">
+        <h3 class="font-orbitron font-bold text-white text-sm">Valorant</h3>
+        <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Tactical 5v5 hero shooter</p>
+        <div class="mt-1.5 flex justify-between items-center">
+          <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+            <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+            <span>Available</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Far Cry 6 -->
+    <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+      <div class="relative w-full pt-[100%]">
+        <img src="farcry6.jpg" alt="Far Cry 6" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+        <div class="absolute top-2 right-2 flex space-x-1">
+          <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+            <i class="ri-star-fill mr-0.5"></i>
+            <span>4.6</span>
+          </span>
+        </div>
+      </div>
+      <div class="p-2">
+        <h3 class="font-orbitron font-bold text-white text-sm">Far Cry 6</h3>
+        <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Open-world action-adventure FPS</p>
+        <div class="mt-1.5 flex justify-between items-center">
+          <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+            <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+            <span>Available</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cyberpunk 2077 -->
+    <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+      <div class="relative w-full pt-[100%]">
+        <img src="cyberpunk.jpg" alt="Cyberpunk 2077" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+        <div class="absolute top-2 right-2 flex space-x-1">
+          <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+            <i class="ri-star-fill mr-0.5"></i>
+            <span>4.7</span>
+          </span>
+        </div>
+      </div>
+      <div class="p-2">
+        <h3 class="font-orbitron font-bold text-white text-sm">Cyberpunk 2077</h3>
+        <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Futuristic open-world RPG</p>
+        <div class="mt-1.5 flex justify-between items-center">
+          <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+            <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+            <span>Available</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- MOBA Games -->
+<section class="px-4 mb-6">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">MOBA Games</h2>
+
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Fortnite.jpg" alt="Fortnite" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.6</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Fortnite</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Battle royale with building mechanics</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+   
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="valorant.jpg" alt="Valorant" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Valorant</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Tactical hero-based shooter</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Counter-Strike 2.jpg" alt="Counter-Strike 2" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.7</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Counter-Strike 2</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Classic bomb defusal shooter reboot</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+     
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- RPG Games -->
+<section class="px-4 mb-20">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">RPG Games</h2>
+
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Demon's Souls -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Demons Souls.jpg" alt="Demon's Souls" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.6</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Demon's Souls</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Dark fantasy action RPG</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- The Last of Us Part I -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="The Last of Us Part I.png" alt="The Last of Us Part I" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">The Last of Us Part I</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Survival action-adventure</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+     
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- The Last of Us Part II Remastered -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="The Last of Us Part II Remastered.png" alt="The Last of Us Part II Remastered" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.9</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">The Last of Us Part II Remastered</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Emotional narrative-driven action</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Dragon Age: The Veilguard -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Dragon Age The Veilguard.jpg" alt="Dragon Age: The Veilguard" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.5</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Dragon Age: The Veilguard</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Upcoming fantasy RPG</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Elden Ring -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Elden Ring.jpg" alt="Elden Ring" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Elden Ring</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Open-world souls-like RPG</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Black Myth: Wukong -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Black_Myth_Wukong.jpg" alt="Black Myth: Wukong" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.3</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Black Myth: Wukong</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Chinese myth-inspired ARPG</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+      <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+  
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- Action Adventure Games -->
+<section class="px-4 mb-20">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">Action Adventure Games</h2>
+
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Spider-Man 2 -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Spider-Man 2.jpg" alt="Spider-Man 2" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.9</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Spider-Man 2</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Superhero open-world adventure</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Spider-Man: Miles Morales -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Spider-Man Miles Morales.jpg" alt="Spider-Man Miles Morales" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.7</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Spider-Man: Miles Morales</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Heroic action-adventure</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Far Cry 6 -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="farcry6.jpg" alt="Far Cry 6" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.4</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Far Cry 6</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Revolutionary open-world FPS</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Uncharted -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Uncharted.png" alt="Uncharted" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.7</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Uncharted</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Cinematic treasure-hunting adventure</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+  
+    </div>
+  </div>
+</div>
+
+<!-- Assassin’s Creed Origins -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Assassins Creed Origins.jpg" alt="Assassin’s Creed Origins" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.6</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Assassin’s Creed Origins</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Ancient Egypt open-world RPG</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Horizon Forbidden West -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Horizon Forbidden West.jpg" alt="Horizon Forbidden West" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i>
+        <span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Horizon Forbidden West</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Post-apocalyptic open-world RPG</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i>
+        <span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- God of War Ragnarök -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="God of War Ragnarök.jpg" alt="God of War Ragnarök" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.9</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">God of War Ragnarök</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Epic Norse mythology action-adventure</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Ghost of Tsushima -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Ghost of Tsushima.jpg" alt="Ghost of Tsushima" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Ghost of Tsushima</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Samurai stealth-action epic</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Rise of the Rōnin -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Rise of the Rōnin.jpg" alt="Rise of the Rōnin" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.6</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Rise of the Rōnin</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Feudal Japan open-world combat RPG</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+ 
+    </div>
+  </div>
+</div>
+
+<!-- Cyberpunk 2077 -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="cyberpunk.jpg" alt="Cyberpunk 2077" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.5</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Cyberpunk 2077</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Futuristic open-world RPG shooter</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Grand Theft Auto V -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Grand Theft Auto V.jpg" alt="Grand Theft Auto V" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Grand Theft Auto V</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Crime-filled open-world mayhem</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+
+<!-- A Way Out -->
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="A Way Out.jpg" alt="A Way Out" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.6</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">A Way Out</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Co-op prison break adventure</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- SportsGames -->
+<section class="px-4 mb-20">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">Sports Games</h2>
+
+</div>
+<div class="grid grid-cols-2 gap-3">
+    <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Cricket 24.jpg" alt="Cricket 24" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.4</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Cricket 24</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Realistic international cricket simulation</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+      
+    </div>
+  </div>
+</div>
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="EA FC 25.jpg" alt="EA FC 25" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.7</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">EA FC 25</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Ultimate football experience with new AI</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+     
+    </div>
+  </div>
+</div>
+</section> 
+
+
+
+
+
+
+<!-- Racing Games -->
+<section class="px-4 mb-20">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">Racing Games</h2>
+
+</div>
+<div class="grid grid-cols-2 gap-3">
+     <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Asphalt Legends Unite.jpg" alt="Asphalt Legends Unite" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.6</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Asphalt Legends Unite</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Arcade racing thrill with global multiplayer</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Gran Turismo 7.jpg" alt="Gran Turismo 7" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Gran Turismo 7</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Real driving simulator with stunning visuals</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Hot Wheels Unleashed 2.jpg" alt="Hot Wheels Unleashed 2" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.5</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Hot Wheels Unleashed 2</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">High-speed toy racing mayhem</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="F1 24.jpeg" alt="F1 24" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.7</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">F1 24</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Official Formula 1 racing simulator</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Forza Horizon 5.jpeg" alt="Forza Horizon 5" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.9</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Forza Horizon 5</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Open-world racing in vibrant Mexico</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Assetto Corsa Competizione.jpg" alt="Assetto Corsa Competizione" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.4</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Assetto Corsa Competizione</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Realistic GT racing sim with pro physics</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Hot Pursuit Remastered.jpg" alt="Hot Pursuit Remastered" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.3</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Hot Pursuit Remastered</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Cops vs racers classic with modern polish</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Need for Speed Payback.jpg" alt="Need for Speed Payback" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.2</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Need for Speed Payback</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Story-driven street racing action</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Need for Speed Heat.jpeg" alt="Need for Speed Heat" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.4</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Need for Speed Heat</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Street vs cop racing in neon-lit nights</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Ride 5.png" alt="Ride 5" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.6</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Ride 5</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Hyper-realistic motorcycle racing</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+<!-- Fighting Games -->
+<section class="px-4 mb-20">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">Fighting Games</h2>
+</div>
+<div class="grid grid-cols-2 gap-3">
+     <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Mortal Kombat 1.jpeg" alt="Mortal Kombat 1" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Mortal Kombat 1</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Brutal battles in a reimagined universe</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="WWE 2K24.jpeg" alt="WWE 2K24" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.5</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">WWE 2K24</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">The ultimate wrestling simulation</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Tekken 8.jpeg" alt="Tekken 8" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.9</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Tekken 8</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Next-gen fights with legendary fighters</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Simulation Games -->
+<section class="px-4 mb-20">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">Simulation Games</h2>
+</div>
+<div class="grid grid-cols-2 gap-3">
+     <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Jurassic World Evolution 2.jpg" alt="Jurassic World Evolution 2" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.6</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Jurassic World Evolution 2</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Build your own Jurassic World with stunning realism</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Simulation Games -->
+<section class="px-4 mb-20">
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-orbitron text-lg font-bold text-white">Simulation Games</h2>
+</div>
+<div class="grid grid-cols-2 gap-3">
+     <div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Sonic Superstars.jpg" alt="Sonic Superstars" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.5</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Sonic Superstars</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Classic Sonic gameplay reimagined in vibrant 2.5D</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="game-card bg-gray-900 rounded-lg border border-gray-800 overflow-hidden cursor-pointer">
+  <div class="relative w-full pt-[100%]">
+    <img src="Astro Bot.jpg" alt="Astro Bot" class="absolute top-0 left-0 w-full h-full object-cover rounded-t-lg">
+    <div class="absolute top-2 right-2 flex space-x-1">
+      <span class="bg-black bg-opacity-70 text-yellow-400 text-xs px-1.5 py-0.5 rounded flex items-center">
+        <i class="ri-star-fill mr-0.5"></i><span>4.8</span>
+      </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <h3 class="font-orbitron font-bold text-white text-sm">Astro Bot</h3>
+    <p class="text-gray-400 text-xs mt-0.5 line-clamp-1">Charming 3D platformer full of creativity and fun</p>
+    <div class="mt-1.5 flex justify-between items-center">
+      <span class="text-xs bg-green-900 text-green-400 px-1.5 py-0.5 rounded-full flex items-center">
+        <i class="ri-checkbox-circle-line mr-0.5 text-xs"></i><span>Available</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!-- Tab Bar -->
+<div class="fixed bottom-0 w-full bg-black bg-opacity-90 backdrop-blur-md border-t border-gray-800 z-50">
+    <div class="grid grid-cols-3 items-center py-2 relative">
+        
+        <!-- Home Button -->
+        <a href="index.html" class="flex flex-col items-center text-gray-500">
+            <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-home-5-line ri-lg"></i>
+            </div>
+            <span class="text-xs mt-0.5">Home</span>
+        </a>
+
+        <!-- Book Button (Centered Floating) -->
+        <div class="flex justify-center">
+            <a href="#" class="flex flex-col items-center text-gray-500 absolute -top-6">
+                <div class="w-14 h-14 flex items-center justify-center bg-primary rounded-full shadow-lg">
+                    <i class="ri-calendar-check-fill ri-xl text-black"></i>
+                </div>
+                <span class="text-xs mt-1 text-white">Book</span>
+            </a>
+        </div>
+
+        <!-- Games Button -->
+        <a href="Games-Catalog-Page.html" class="flex flex-col items-center text-primary">
+            <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-gamepad-fill ri-lg"></i>
+            </div>
+            <span class="text-xs mt-0.5">Games</span>
+        </a>
+
+    </div>
+</div>
+
+<script>
+
+closeModal.addEventListener('click', () => {
+  gameModal.classList.add('hidden');
+  document.body.style.overflow = 'auto';
+});
+
+// Category filter functionality
+const categoryPills = document.querySelectorAll('.category-pill');
+categoryPills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    categoryPills.forEach(p => p.classList.remove('active'));
+    categoryPills.forEach(p => p.classList.remove('bg-primary'));
+    categoryPills.forEach(p => p.classList.add('bg-gray-800'));
+    categoryPills.forEach(p => p.classList.add('text-white'));
+    pill.classList.add('active');
+    pill.classList.add('bg-primary');
+    pill.classList.add('text-black');
+    pill.classList.remove('bg-gray-800');
+    pill.classList.remove('text-white');
+  });
+});
+</script>
+</body>
+</html>
